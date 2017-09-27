@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1820607738457306}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.78, y: 1.3, z: -5.23}
-  m_LocalScale: {x: 0.29252487, y: 0.29252487, z: 0.29252476}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   target: {fileID: 4510512385788106, guid: bc5cacd5330f9894386037b1347b8e27, type: 2}
   newTarget: {fileID: 4479149341423726, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
   targetPosition: {x: 0, y: 0, z: 0}
-  speed: 10
+  speed: 5
 --- !u!135 &135272749952052844
 SphereCollider:
   m_ObjectHideFlags: 1
