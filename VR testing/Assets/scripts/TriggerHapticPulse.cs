@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TriggerHapticPulse : MonoBehaviour {
 
-	private ushort vibratingTime;
-	SteamVR_TrackedObject trackedObj;
+	//SteamVR_TrackedObject trackedObj;
 
 	void Awake ()
 	{
-		trackedObj = GetComponent<SteamVR_TrackedObject>();
+		// var trackedObj = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
+			//GetComponent<SteamVR_TrackedObject>();
 	}
 
 	// Use this for initialization
@@ -26,8 +26,8 @@ public class TriggerHapticPulse : MonoBehaviour {
 	{
 		if (Other.gameObject.CompareTag ("buncing")) {
 			Debug.Log ("Wack!");
-			vibratingTime = 180;
-			SteamVR_Controller.Input ((int)trackedObj.index).TriggerHapticPulse (vibratingTime);
+			var trackedObj = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
+			SteamVR_Controller.Input (trackedObj).TriggerHapticPulse (1000);
 		}
 	}
 }
