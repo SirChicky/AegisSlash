@@ -378,7 +378,6 @@ GameObject:
   - component: {fileID: 1090325602}
   - component: {fileID: 1090325603}
   - component: {fileID: 1090325605}
-  - component: {fileID: 1090325606}
   - component: {fileID: 1090325604}
   m_Layer: 0
   m_Name: Sword
@@ -477,21 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d1da54769276642b334a53242e8a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackedObj: {fileID: 0}
 --- !u!114 &1090325604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1090325597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  origin: {fileID: 818312029}
---- !u!114 &1090325605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -502,27 +487,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3f7b7f34850244999d170d6dc6b003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerIndex: 0
+  controllerIndex: 1
   triggerPressed: 0
   steamPressed: 0
   menuPressed: 0
   padPressed: 0
   padTouched: 0
   gripped: 0
---- !u!114 &1090325606
+  limitx: 1
+  limity: 1
+  limitz: 1
+  limitangx: 1
+  limitangy: 1
+  limitangz: 1
+--- !u!114 &1090325605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090325597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
+  m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
-  estimateOnAwake: 0
+  index: 0
+  origin: {fileID: 818312029}
 --- !u!1001 &1255547896
 Prefab:
   m_ObjectHideFlags: 0
@@ -605,14 +595,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d1da54769276642b334a53242e8a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackedObj: {fileID: 0}
 --- !u!114 &1434991565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434991562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e3f7b7f34850244999d170d6dc6b003, type: 3}
   m_Name: 
@@ -624,6 +613,12 @@ MonoBehaviour:
   padPressed: 0
   padTouched: 0
   gripped: 0
+  limitx: 2
+  limity: 2
+  limitz: 2
+  limitangx: 2
+  limitangy: 2
+  limitangz: 2
 --- !u!1001 &1698021829
 Prefab:
   m_ObjectHideFlags: 0
