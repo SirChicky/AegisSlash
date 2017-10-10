@@ -48,6 +48,10 @@ public class BulletMovement : MonoBehaviour
 
 		}
 
+		if (Other.gameObject.tag == "IdleSword") {
+			Destroy (this.gameObject);
+			Debug.Log ("Anus de cheval");
+		}
 	}
 
 }

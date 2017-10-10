@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Moving_Sword :SteamVR_TrackedController 
 {
-	public GameObject bullet;
-	public GameObject sword;
-	public float limitx;
+	//public GameObject sword;
+	/*public float limitx;
 	public float limity;
-	public float limitz;
+	public float limitz;*/
 
 	public float limitangx;
 	public float limitangy;
@@ -20,6 +19,9 @@ public class Moving_Sword :SteamVR_TrackedController
 	public Vector3 angularVelocity { get { return controller.angularVelocity; } }
 
 
+	Vector3 previousPosition;
+	[SerializeField]
+	float movementThreshold;
 
 
 	void Start()
@@ -29,42 +31,33 @@ public class Moving_Sword :SteamVR_TrackedController
 		
 
 	void Update()
-		
 	{
-		Debug.Log ("" + controller.velocity);
-		Debug.Log ("" + controller.angularVelocity);
+		//Debug.Log ("" + controller.velocity);
+		//Debug.Log ("" + controller.angularVelocity);
+		//Debug.Log (rb.velocity);
+		float dist = Vector3.Distance (previousPosition, transform.position);
+		if (dist < movementThreshold)
+		{
+			gameObject.tag = "IdleSword";
+		}		
+
+		else 
+		{
+			gameObject.tag="Sword";
+		}
+
 
 	}
+	void LateUpdate()
+	{
+		previousPosition = transform.position;
+	}
+
 	void OnTriggerEnter(Collider Other)
 	{
 		
-		if (controller.velocity.x<limitx)
-			{
-			sword.tag="IdleSword";
-			}
 
-		else 
-		{
-			sword.tag="Sword";
-		}
-		if (controller.velocity.y<limity)
-		{
-			sword.tag="IdleSword";
-			}
-		
-		else
-		{
-			sword.tag="Sword";
-		}
-		if (controller.velocity.z<limitz)
-		{
-			sword.tag="IdleSword";//a creer
-			}
-		
-		else 
-		{
-		sword.tag="Sword";
-		}
+
 		
 
 		if (controller.velocity.x>limitangx)
@@ -79,5 +72,6 @@ public class Moving_Sword :SteamVR_TrackedController
 		{
 			//Debug.Log ("The world(O)");
 		}
-}
+
+	}
 }
