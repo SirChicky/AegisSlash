@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18253183, g: 0.228243, b: 0.3072177, a: 1}
+  m_IndirectSpecularColor: {r: 0.1825315, g: 0.22824217, b: 0.30721655, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -681,11 +681,58 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698021830}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &1698021833 stripped
 Transform:
   m_PrefabParentObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_PrefabInternal: {fileID: 1698021829}
+--- !u!1001 &1802310359
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 889090348}
+    m_Modifications:
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094032606309862, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82274346333404090, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4a4db2ebcf636dc4e8fb6e019e7af46c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1832458925 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1048956993376568, guid: 5c50a79062a3aaa4095ba36fc77c1245,
