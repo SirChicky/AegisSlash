@@ -487,13 +487,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3f7b7f34850244999d170d6dc6b003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerIndex: 1
+  controllerIndex: 2
   triggerPressed: 0
   steamPressed: 0
   menuPressed: 0
   padPressed: 0
   padTouched: 0
   gripped: 0
+  bullet: {fileID: 1820607738457306, guid: cb2c96416625cdb438db34bb8ee74850, type: 2}
+  sword: {fileID: 1090325597}
   limitx: 1
   limity: 1
   limitz: 1
@@ -595,30 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d1da54769276642b334a53242e8a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1434991565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1434991562}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3f7b7f34850244999d170d6dc6b003, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerIndex: 1
-  triggerPressed: 0
-  steamPressed: 0
-  menuPressed: 0
-  padPressed: 0
-  padTouched: 0
-  gripped: 0
-  limitx: 2
-  limity: 2
-  limitz: 2
-  limitangx: 2
-  limitangy: 2
-  limitangz: 2
 --- !u!1001 &1698021829
 Prefab:
   m_ObjectHideFlags: 0

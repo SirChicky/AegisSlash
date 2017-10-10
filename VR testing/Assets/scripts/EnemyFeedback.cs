@@ -25,7 +25,7 @@ public class EnemyFeedback : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Other)
 	{
-		if (Other.gameObject.CompareTag ("buncing")) {
+		if (Other.gameObject.CompareTag ("Bullet")) {
 			Debug.Log ("Boom");
 			if (redLight.enabled = false) {
 				lightOnTime = 60.0f;

@@ -24,7 +24,7 @@ public class TriggerHapticPulse : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Other)
 	{
-		if (Other.gameObject.CompareTag ("buncing")) {
+		if (Other.gameObject.CompareTag ("Bullet")) {
 			Debug.Log ("Wack!");
 			var trackedObj = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
 			SteamVR_Controller.Input (trackedObj).TriggerHapticPulse (1000);
