@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Moving_Sword :SteamVR_TrackedController 
 {
+	public GameObject bullet;
+	public GameObject sword;
 	public float limitx;
 	public float limity;
 	public float limitz;
@@ -36,29 +38,46 @@ public class Moving_Sword :SteamVR_TrackedController
 		Debug.Log ("" + controller.velocity);
 		Debug.Log ("" + controller.angularVelocity);
 
-		if (controller.velocity.x>limitx)
+	}
+
+	void OnTriggerEnter(Collider Other)
+	{
+		
+		if (controller.velocity.x<limitx)
 			{
-				Debug.Log ("oh my goodness");
+			sword.tag="IdleSword";
+			if (Other.gameObject.CompareTag ("buncing")) {
+				Debug.Log ("Destroy");
+				Destroy (bullet);
+			}
 		}
-		if (controller.velocity.y>limity)
+		if (controller.velocity.y<limity)
 		{
-				Debug.Log ("oh my god");
+			sword.tag="IdleSword";
+			if (Other.gameObject.CompareTag ("buncing")) {
+				Debug.Log ("Destroy");
+				Destroy (bullet);
+			}
 		}	
-		if (controller.velocity.z>limitz)
+		if (controller.velocity.z<limitz)
 		{
-				Debug.Log ("oh no");
+			sword.tag="IdleSword";//a creer
+			if (Other.gameObject.CompareTag ("buncing")) {
+				Debug.Log ("Destroy");
+				Destroy (bullet);
+			}
 		}
 		if (controller.velocity.x>limitangx)
 		{
-			Debug.Log ("Star platinum");
+			//Debug.Log ("Star platinum");
 		}
 		if (controller.velocity.y>limitangy)
 		{
-			Debug.Log ("Silver chariot");
+			//Debug.Log ("Silver chariot");
 		}	
 		if (controller.velocity.z>limitangz)
 		{
-			Debug.Log ("The world(O)");
+			//Debug.Log ("The world(O)");
 		}
 }
 }
