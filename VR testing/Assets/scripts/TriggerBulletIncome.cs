@@ -30,7 +30,7 @@ public class TriggerBulletIncome : MonoBehaviour {
 			bulletEntered = false;
 			alertPlayed = false;
 		}
-		Debug.Log (alertCooldown);
+		//Debug.Log (alertCooldown);
 	}
 
 	void OnTriggerEnter (Collider other) {
