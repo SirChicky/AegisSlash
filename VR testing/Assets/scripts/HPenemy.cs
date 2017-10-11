@@ -7,7 +7,7 @@ public class HPenemy : MonoBehaviour {
 	public int damages;
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(""+ hp);
+		//Debug.Log(""+ hp);
 		if (hp <= 0) {
 			Destroy(this.gameObject);
 
@@ -18,7 +18,7 @@ public class HPenemy : MonoBehaviour {
 	{
 		if (Other.gameObject.CompareTag ("BulletBack")) {
 			hp = hp - damages;
-			Debug.Log("touche");
+			//Debug.Log("touche");
 		}
 	}
 }
