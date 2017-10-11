@@ -5,29 +5,27 @@ using UnityEngine;
 public class BulletLaunch : MonoBehaviour 
 {
 	public GameObject bullet;
+	public int timer;
+	private int originTimer;
 	private Vector3 target;
 	private Vector3 spawn;
-
-	// Use this for initialization
-	void Start () 
-	{
-		
-
-
-
-
-
-	}
 	
 	// Update is called once per frame
+	void Awake(){
+		originTimer = timer;
+
+	}
 	void Update () 
-	{
-		if (Input.GetButtonDown ("Fire1")) 
+	{ 
+		timer = timer - 1;
+
+		if (timer<=0)
 		{
 			Vector3 start = transform.position;
 
 			{
 				GameObject obj = (GameObject)Instantiate (bullet, start, transform.rotation);
+				timer = originTimer;
 			}
 
 		}
