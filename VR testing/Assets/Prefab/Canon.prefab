@@ -22,9 +22,12 @@ GameObject:
   - component: {fileID: 33086335966121734}
   - component: {fileID: 136654933811261568}
   - component: {fileID: 23210806198735070}
+  - component: {fileID: 108058124580764820}
+  - component: {fileID: 114947829722303510}
+  - component: {fileID: 114503643550774772}
   m_Layer: 0
   m_Name: Canon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1048956993376568}
   m_LocalRotation: {x: -0.041617755, y: 0.007824039, z: 0.7064261, w: 0.70651895}
-  m_LocalPosition: {x: 0.058609933, y: 3.0201106, z: -2.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -17.9, y: 0.89, z: 0.26}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4128745765798072}
   m_Father: {fileID: 0}
@@ -154,6 +157,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864878850850804}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!108 &108058124580764820
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1048956993376568}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 10
+  m_Range: 4.07
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114501395160245692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,6 +208,19 @@ MonoBehaviour:
   canon: {fileID: 0}
   time: 0
   power: 0
+--- !u!114 &114503643550774772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1048956993376568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fc62f57357cd94185d43fb093a0633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 3
+  damages: 1
 --- !u!114 &114865557563214166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,6 +233,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1820607738457306, guid: cb2c96416625cdb438db34bb8ee74850, type: 2}
+--- !u!114 &114947829722303510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1048956993376568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb02f70e77d5c0449cf0d59384e2dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135195629662552844
 SphereCollider:
   m_ObjectHideFlags: 1

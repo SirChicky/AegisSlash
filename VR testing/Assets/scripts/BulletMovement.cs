@@ -44,6 +44,7 @@ public class BulletMovement : MonoBehaviour
 			Debug.Log ("Whack");
 			speed = -speed;
 			gameObject.tag = ("BulletBack");
+			Debug.Log("ORA");
 			//float step = speed * Time.deltaTime;
 			//transform.position = Vector3.MoveTowards (transform.position, newTarget.position, step);
 
@@ -54,7 +55,7 @@ public class BulletMovement : MonoBehaviour
 			Debug.Log ("KIKOO");
 		}
 		if (Other.gameObject.tag == "Enemy") {
-			Destroy (this.gameObject);
+			Destroy (this.gameObject,3.0f);
 			Debug.Log ("JOJO");
 	}
 

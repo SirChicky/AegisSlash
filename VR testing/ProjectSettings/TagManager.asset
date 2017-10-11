@@ -9,6 +9,8 @@ TagManager:
   - Sword
   - IdleSword
   - Bullet
+  - Enemy
+  - BulletBack
   layers:
   - Default
   - TransparentFX
