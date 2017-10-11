@@ -43,6 +43,7 @@ public class BulletMovement : MonoBehaviour
 		{
 			Debug.Log ("Whack");
 			speed = -speed;
+			gameObject.tag = ("BulletBack");
 			//float step = speed * Time.deltaTime;
 			//transform.position = Vector3.MoveTowards (transform.position, newTarget.position, step);
 
@@ -50,8 +51,12 @@ public class BulletMovement : MonoBehaviour
 
 		if (Other.gameObject.tag == "IdleSword") {
 			Destroy (this.gameObject);
-			Debug.Log ("Anus de cheval");
+			Debug.Log ("KIKOO");
 		}
+		if (Other.gameObject.tag == "Enemy") {
+			Destroy (this.gameObject);
+			Debug.Log ("JOJO");
 	}
 
+}
 }
