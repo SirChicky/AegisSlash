@@ -7,13 +7,13 @@ public class TriggerBulletIncome : MonoBehaviour {
 	public bool bulletEntered;
 	private bool alertPlayed;
 	public AudioClip bulletAlert;
-	private AudioSource source;
+	public AudioSource source;
 	private float alertCooldown;
 
 	// Use this for initialization
 	void Start () {
 		bulletEntered = false;
-		source = GetComponent<AudioSource>();
+		//source = GetComponent<AudioSource>();
 		//alertCooldown = 3.0f;
 	}
 	
