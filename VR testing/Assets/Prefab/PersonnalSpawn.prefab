@@ -51,6 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f5d99ab14a1074b8e3428a2c18c4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
-  Timer: 40
-  objectToFind: Canon1
+  enemy: {fileID: 1048956993376568, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
