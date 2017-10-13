@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 226400447}
   m_Layer: 0
   m_Name: BulletTrigger (1)
-  m_TagString: Untagged
+  m_TagString: BulletDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 463256884}
   m_Layer: 0
   m_Name: BulletTrigger (3)
-  m_TagString: Untagged
+  m_TagString: BulletDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 736305821}
   m_Layer: 0
   m_Name: BulletTrigger (2)
-  m_TagString: Untagged
+  m_TagString: BulletDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1828,7 +1828,7 @@ GameObject:
   - component: {fileID: 1802310361}
   m_Layer: 0
   m_Name: BulletTrigger
-  m_TagString: Untagged
+  m_TagString: BulletDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

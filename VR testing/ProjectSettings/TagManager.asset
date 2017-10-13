@@ -11,6 +11,8 @@ TagManager:
   - Bullet
   - Enemy
   - BulletBack
+  - BulletDetected
+  - BulletDetector
   layers:
   - Default
   - TransparentFX
