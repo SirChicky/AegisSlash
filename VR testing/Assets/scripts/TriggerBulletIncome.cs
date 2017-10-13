@@ -14,14 +14,17 @@ public class TriggerBulletIncome : MonoBehaviour {
 	void Start () {
 		bulletEntered = false;
 		//source = GetComponent<AudioSource>();
-		//alertCooldown = 3.0f;
+		alertCooldown = 3.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (bulletEntered == false) {
+
+		if (bulletEntered == true && alertPlayed == false) {
 			source.PlayOneShot (bulletAlert);
-		}*/
+			alertPlayed = true;
+		}
+
 		if (bulletEntered == true && alertPlayed == true) {
 			alertCooldown -= Time.deltaTime;
 		}
@@ -38,9 +41,6 @@ public class TriggerBulletIncome : MonoBehaviour {
 			bulletEntered = true;
 			alertCooldown = 3.0f;
 		}
-		if (bulletEntered == true && alertPlayed == false) {
-			source.PlayOneShot (bulletAlert);
-			alertPlayed = true;
-		}
+
 	}
 }
