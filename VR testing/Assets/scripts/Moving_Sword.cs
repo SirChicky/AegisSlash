@@ -9,6 +9,8 @@ public class Moving_Sword :SteamVR_TrackedController
 	public float limity;
 	public float limitz;*/
 
+	public GameObject shadow;
+
 	public float limitangx;
 	public float limitangy;
 	public float limitangz;
@@ -44,6 +46,7 @@ public class Moving_Sword :SteamVR_TrackedController
 		else 
 		{
 			gameObject.tag="Sword";
+			Instantiate (shadow);
 		}
 
 
