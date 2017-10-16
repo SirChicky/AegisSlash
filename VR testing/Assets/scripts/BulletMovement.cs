@@ -60,6 +60,11 @@ public class BulletMovement : MonoBehaviour
 			Destroy (this.gameObject, 3.0f);
 			//Debug.Log ("JOJO");
 		}
+		if (Other.gameObject.tag == "Detection") {
+			Light lightComp = this.gameObject.AddComponent<Light>();
+			lightComp.color = Color.blue;
+		
+		}
 	}
 		
 }
