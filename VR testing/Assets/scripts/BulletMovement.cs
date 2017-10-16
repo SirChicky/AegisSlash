@@ -10,7 +10,7 @@ public class BulletMovement : MonoBehaviour
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	public float speed;
-	public Transform bulletPrefab;
+	public GameObject himself;
 
 	// Use this for initialization
 	void Start () 
@@ -32,15 +32,13 @@ public class BulletMovement : MonoBehaviour
 
 	void OnTriggerEnter(Collider Other)
 	{
-		if (Other.gameObject.CompareTag("Player"))
-			{
-				Debug.Log ("Poke");
-				Destroy(gameObject);
+		if (Other.gameObject.CompareTag ("Player")) {
+			Debug.Log ("Poke");
+			Destroy (gameObject);
 
-			}
+		}
 
-		if (Other.gameObject.CompareTag("Sword"))
-		{
+		if (Other.gameObject.CompareTag ("Sword")) {
 			Debug.Log ("Whack");
 			speed = -speed;
 			gameObject.tag = ("BulletBack");
@@ -50,8 +48,7 @@ public class BulletMovement : MonoBehaviour
 
 		}
 
-		if (Other.gameObject.CompareTag("BulletDetector"))
-		{
+		if (Other.gameObject.CompareTag ("BulletDetector")) {
 			Debug.Log ("Beep!");
 			gameObject.tag = ("BulletDetected");
 		}
@@ -61,15 +58,19 @@ public class BulletMovement : MonoBehaviour
 			//Debug.Log ("KIKOO");
 		}
 		if (Other.gameObject.tag == "Enemy") {
-			Destroy (this.gameObject,3.0f);
+			Destroy (this.gameObject, 3.0f);
 			//Debug.Log ("JOJO");
-	}
-		if (Other.gameObject.tag == "Bullet") {
-			Transform bullet = Instantiate(bulletPrefab) as Transform;
-			Physics.IgnoreCollision(bullet.GetComponent<Collider>(), GetComponent<Collider>());
-			Debug.Log("phantom bullet");
-		
 		}
+	}
 
+	 
+void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.tag == "Bullet")
+		{
+			Debug.Log ("OUYPI");
+			Physics.IgnoreCollision(himself.GetComponent<Collider>(), GetComponent<Collider>());
+		}
 }
 }
+
