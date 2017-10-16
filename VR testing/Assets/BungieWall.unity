@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1825315, g: 0.22824217, b: 0.30721655, a: 1}
+  m_IndirectSpecularColor: {r: 0.18253183, g: 0.22824296, b: 0.3072177, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ MonoBehaviour:
   limitangx: 0.000001
   limitangy: 0.000001
   limitangz: 0.000001
-  movementThreshold: 0.01
+  movementThreshold: 0.05
 --- !u!114 &173972990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   limitangx: 0.000001
   limitangy: 0.000001
   limitangz: 0.000001
-  movementThreshold: 0.01
+  movementThreshold: 0.05
 --- !u!1 &1102411824
 GameObject:
   m_ObjectHideFlags: 0
