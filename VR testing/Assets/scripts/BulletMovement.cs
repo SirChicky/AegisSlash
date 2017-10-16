@@ -10,7 +10,7 @@ public class BulletMovement : MonoBehaviour
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	public float speed;
-
+	public Transform bulletPrefab;
 
 	// Use this for initialization
 	void Start () 
@@ -64,6 +64,12 @@ public class BulletMovement : MonoBehaviour
 			Destroy (this.gameObject,3.0f);
 			//Debug.Log ("JOJO");
 	}
+		if (Other.gameObject.tag == "Bullet") {
+			Transform bullet = Instantiate(bulletPrefab) as Transform;
+			Physics.IgnoreCollision(bullet.GetComponent<Collider>(), GetComponent<Collider>());
+			Debug.Log("phantom bullet");
+		
+		}
 
 }
 }
