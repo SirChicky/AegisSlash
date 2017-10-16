@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BulletIncomeVisualWarningL : MonoBehaviour 
 {
+	public GameObject leftWarning;
 
 	// Use this for initialization
 	void Start () 
 	{
-		
+		leftWarning.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -22,8 +23,18 @@ public class BulletIncomeVisualWarningL : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Bullet") 
 		{
-			
+			StartCoroutine ("Appear");
 		}
 
 	}
+
+	IEnumerator Appear()
+	{
+		leftWarning.SetActive (true);
+		yield return new WaitForSeconds (2f);
+		leftWarning.SetActive (false);
+		yield break;
+	}
+
+
 }

@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 226400450}
   - component: {fileID: 226400449}
   - component: {fileID: 226400447}
+  - component: {fileID: 226400453}
   m_Layer: 0
   m_Name: BulletTrigger (1)
   m_TagString: BulletDetector
@@ -492,6 +493,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226400446}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &226400453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226400446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfc853f1c92e934eb3b8eea8bbab5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightWarning: {fileID: 1517039585}
 --- !u!4 &314085976
 Transform:
   m_ObjectHideFlags: 0
@@ -679,6 +692,7 @@ GameObject:
   - component: {fileID: 463256887}
   - component: {fileID: 463256886}
   - component: {fileID: 463256884}
+  - component: {fileID: 463256890}
   m_Layer: 0
   m_Name: BulletTrigger (3)
   m_TagString: BulletDetector
@@ -783,6 +797,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463256883}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &463256890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463256883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2733edf6adc184d498ae87fd9adf091a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftWarning: {fileID: 2058655431}
 --- !u!1 &500238501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1292,7 @@ GameObject:
   - component: {fileID: 736305824}
   - component: {fileID: 736305823}
   - component: {fileID: 736305821}
+  - component: {fileID: 736305827}
   m_Layer: 0
   m_Name: BulletTrigger (2)
   m_TagString: BulletDetector
@@ -1370,6 +1397,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 736305820}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &736305827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736305820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfc853f1c92e934eb3b8eea8bbab5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightWarning: {fileID: 1517039585}
 --- !u!4 &756729458 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4351928317596976, guid: 3aeb028d620907340878cbb6fe0bdc9d,
@@ -2186,7 +2225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1517039586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2347,6 +2386,7 @@ GameObject:
   - component: {fileID: 1802310364}
   - component: {fileID: 1802310363}
   - component: {fileID: 1802310361}
+  - component: {fileID: 1802310367}
   m_Layer: 0
   m_Name: BulletTrigger
   m_TagString: BulletDetector
@@ -2451,6 +2491,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1802310360}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1802310367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802310360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2733edf6adc184d498ae87fd9adf091a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftWarning: {fileID: 2058655431}
 --- !u!1 &1807010520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,7 +2549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2058655432
 RectTransform:
   m_ObjectHideFlags: 0
