@@ -10,8 +10,6 @@ public class BulletMovement : MonoBehaviour
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	public float speed;
-	public GameObject himself;
-
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,6 +21,7 @@ public class BulletMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		
 		//targetPosition = new Vector3 (_target.transform.position.x, _target.transform.position.y, _target.transform.position.z);
 		//targetPosition = _target.transform.position;
 		float step = speed * Time.deltaTime;
@@ -62,15 +61,7 @@ public class BulletMovement : MonoBehaviour
 			//Debug.Log ("JOJO");
 		}
 	}
+		
+}
 
-	 
-void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.tag == "Bullet")
-		{
-			Debug.Log ("OUYPI");
-			Physics.IgnoreCollision(himself.GetComponent<Collider>(), GetComponent<Collider>());
-		}
-}
-}
 

@@ -105,14 +105,14 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820607738457306}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ddcfb4cc21e043948b5a84afe22d90f0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -196,6 +196,7 @@ MonoBehaviour:
   newTarget: {fileID: 4479149341423726, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
   targetPosition: {x: 0, y: 0, z: 0}
   speed: 5
+  himself: {fileID: 1820607738457306}
 --- !u!135 &135272749952052844
 SphereCollider:
   m_ObjectHideFlags: 1
