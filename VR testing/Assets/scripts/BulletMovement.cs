@@ -10,12 +10,15 @@ public class BulletMovement : MonoBehaviour
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	public float speed;
+	private Renderer rend;
+	private Color color= Color.white;
 	// Use this for initialization
 	void Start () 
 	{
 		_target = GameObject.FindWithTag ("Player");
 		target = _target.transform;
 		targetPosition = _target.transform.position;
+		rend = GetComponent<Renderer> ();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +42,7 @@ public class BulletMovement : MonoBehaviour
 
 		if (Other.gameObject.CompareTag ("Sword")) {
 			Debug.Log ("Whack");
+			rend.material.color = Color.black;
 			speed = -speed;
 			gameObject.tag = ("BulletBack");
 			//Debug.Log("ORA");
