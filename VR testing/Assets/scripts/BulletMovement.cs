@@ -72,7 +72,7 @@ public class BulletMovement : MonoBehaviour
 
 		if (Other.gameObject.tag == "LevelBorder") {
 			Destroy (this.gameObject);
-
+			Debug.Log ("BorderHit");
 		}
 
 
