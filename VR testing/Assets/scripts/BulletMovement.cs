@@ -69,6 +69,14 @@ public class BulletMovement : MonoBehaviour
 			lightComp.color = Color.blue;
 		
 		}
+
+		if (Other.gameObject.tag == "LevelBorder") {
+			Destroy (this.gameObject);
+
+		}
+
+
+
 	}
 		
 }
