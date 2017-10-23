@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletEntered: 0
-  bulletAlert: {fileID: 8300000, guid: c8d98188360a6864fa421a67e0bb5360, type: 3}
+  bulletAlert: {fileID: 8300000, guid: b7133bc80e0ce1045b6657170707102f, type: 3}
   source: {fileID: 451165771}
 --- !u!23 &226400450
 MeshRenderer:
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletEntered: 0
-  bulletAlert: {fileID: 8300000, guid: c8d98188360a6864fa421a67e0bb5360, type: 3}
+  bulletAlert: {fileID: 8300000, guid: b7133bc80e0ce1045b6657170707102f, type: 3}
   source: {fileID: 1189057507}
 --- !u!23 &463256887
 MeshRenderer:
@@ -1171,6 +1171,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1255528078925044, guid: 291460f4f73de284fa07c4cbc756004f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 291460f4f73de284fa07c4cbc756004f, type: 2}
   m_IsPrefabParent: 0
@@ -1439,6 +1443,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1255528078925044, guid: 291460f4f73de284fa07c4cbc756004f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 291460f4f73de284fa07c4cbc756004f, type: 2}
   m_IsPrefabParent: 0
@@ -1678,7 +1686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletEntered: 0
-  bulletAlert: {fileID: 8300000, guid: c8d98188360a6864fa421a67e0bb5360, type: 3}
+  bulletAlert: {fileID: 8300000, guid: b7133bc80e0ce1045b6657170707102f, type: 3}
   source: {fileID: 2071957646}
 --- !u!23 &736305824
 MeshRenderer:
@@ -6250,7 +6258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletEntered: 0
-  bulletAlert: {fileID: 8300000, guid: c8d98188360a6864fa421a67e0bb5360, type: 3}
+  bulletAlert: {fileID: 8300000, guid: b7133bc80e0ce1045b6657170707102f, type: 3}
   source: {fileID: 551450969}
 --- !u!23 &1802310364
 MeshRenderer:
