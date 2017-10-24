@@ -5,7 +5,8 @@ using UnityEngine;
 public class BulletIncomeVisualWarningR : MonoBehaviour 
 {
 	public GameObject rightWarning;
-
+	public string detectionTag;
+	public string newTag;
 
 	// Use this for initialization
 	void Start () 
@@ -21,8 +22,9 @@ public class BulletIncomeVisualWarningR : MonoBehaviour
 
 	void OnTriggerEnter (Collider other) 
 	{
-		if (other.gameObject.tag == "Bullet") 
+		if (other.gameObject.tag == detectionTag) 
 		{
+			other.gameObject.tag = newTag;
 			StartCoroutine ("Appear");
 		}
 

@@ -856,6 +856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 2090997696}
+  detectionTag: Bullet
+  newTag: BulletDetected
 --- !u!1 &238100965
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 538504794}
+  detectionTag: BulletDetected
+  newTag: BulletDetected2
 --- !u!65 &266701864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1140,6 +1144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 1517039585}
+  detectionTag: BulletDetected2
+  newTag: BulletDetected3
 --- !u!65 &362866307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1301,6 +1307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 2058655431}
+  detectionTag: BulletDetected2
+  newTag: BulletDetected3
 --- !u!65 &422024723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1738,6 +1746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 1100360326}
+  detectionTag: Bullet
+  newTag: BulletDetected
 --- !u!1 &500238501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +1970,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 1091403120}
+  detectionTag: BulletDetected
+  newTag: BulletDetected2
 --- !u!65 &521891934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2987,6 +2999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 2090997696}
+  detectionTag: Bullet
+  newTag: BulletDetected
 --- !u!4 &756729458 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4832933822438682, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
@@ -4198,6 +4212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 2058655431}
+  detectionTag: BulletDetected2
+  newTag: BulletDetected3
 --- !u!65 &1179070770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4501,6 +4517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 1091403120}
+  detectionTag: BulletDetected
+  newTag: BulletDetected2
 --- !u!65 &1242435792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4793,6 +4811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 538504794}
+  detectionTag: BulletDetected
+  newTag: BulletDetected2
 --- !u!65 &1281948675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8575,6 +8595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightWarning: {fileID: 1517039585}
+  detectionTag: BulletDetected2
+  newTag: BulletDetected3
 --- !u!65 &1501214884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9101,6 +9123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftWarning: {fileID: 1100360326}
+  detectionTag: Bullet
+  newTag: BulletDetected
 --- !u!1 &1807010520
 GameObject:
   m_ObjectHideFlags: 0
@@ -9152,7 +9176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2058655432
 RectTransform:
   m_ObjectHideFlags: 0
