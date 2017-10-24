@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135272749952052844}
   - component: {fileID: 23288772773806748}
   - component: {fileID: 54403196566256208}
+  - component: {fileID: 114462987296072308}
   - component: {fileID: 114502540039817826}
   - component: {fileID: 82495595018006446}
   m_Layer: 8
@@ -179,6 +180,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114462987296072308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820607738457306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a22f46cd183be743b5f9c660407fe0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnBullet: {fileID: 1504971582274672, guid: ee53c6fec5ab1dd4f885225064e697bf,
+    type: 2}
 --- !u!114 &114502540039817826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,6 +210,7 @@ MonoBehaviour:
   newTarget: {fileID: 4479149341423726, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
   targetPosition: {x: 0, y: 0, z: 0}
   speed: 8
+  currentTag: 
 --- !u!135 &135272749952052844
 SphereCollider:
   m_ObjectHideFlags: 1
