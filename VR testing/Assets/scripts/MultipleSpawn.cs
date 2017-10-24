@@ -7,7 +7,8 @@ public class MultipleSpawn : MonoBehaviour {
 	public GameObject enemy;
 	private GameObject myenemy;
 	public int numberenemies;
-	public Transform[] spawnPoints;       
+	public Transform[] spawnPoints;
+	List<Transform> actualSpawns;
 	public bool existence;
 	public float timer;
 	private float timerOrigin;
@@ -15,13 +16,11 @@ public class MultipleSpawn : MonoBehaviour {
 
 	void Awake(){
 		timerOrigin = timer;
-
+		actualSpawns = new List<Transform> (spawnPoints);
 	}
 	void Start(){
-		int spawnPointIndex = Random.Range (0, spawnPoints.Length);
-		myenemy = Instantiate (enemy, spawnPoints [spawnPointIndex].position, spawnPoints [spawnPointIndex].rotation);
-		numberenemies = numberenemies -1;
-
+		
+		SpawnEnnemy ();
 	}
 
 	void Update () {
@@ -32,11 +31,9 @@ public class MultipleSpawn : MonoBehaviour {
 			timer= timer-(Time.deltaTime);
 			if (timer <= 0 && numberenemies>0) {
 				// Find a random index between zero and one less than the number of spawn points.
-				int spawnPointIndex = Random.Range (0, spawnPoints.Length);
 
 				// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-				myenemy = Instantiate (enemy, spawnPoints [spawnPointIndex].position, spawnPoints [spawnPointIndex].rotation);
-				numberenemies = numberenemies-1;
+				SpawnEnnemy();
 				timer = timerOrigin;
 
 			}
@@ -46,5 +43,15 @@ public class MultipleSpawn : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 
+	}
+
+	void SpawnEnnemy()
+	{
+		int spawnPointIndex = Random.Range (0, actualSpawns.Count);
+		myenemy = Instantiate (enemy, actualSpawns [spawnPointIndex].position, actualSpawns [spawnPointIndex].rotation);
+		numberenemies = numberenemies -1;
+		actualSpawns.RemoveAt (spawnPointIndex);
+		if (actualSpawns.Count == 0)
+			actualSpawns = new List<Transform> (spawnPoints);
 	}
 }
