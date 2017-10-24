@@ -51,7 +51,7 @@ public class BulletMovement : MonoBehaviour
 
 		}
 
-		if (Other.gameObject.CompareTag ("BulletDetector")) {
+		if (Other.gameObject.CompareTag ("BulletDetector") && this.gameObject.tag==("Bullet")) {
 			Debug.Log ("Beep!");
 			gameObject.tag = ("BulletDetected");
 		}
