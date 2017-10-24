@@ -14,6 +14,7 @@ public class Moving_Sword :SteamVR_TrackedController
 	public float limitangx;
 	public float limitangy;
 	public float limitangz;
+	public float instantiateTimer;
 
 	private SteamVR_TrackedObject trackedObj;
 	public SteamVR_Controller.Device controller { get { return SteamVR_Controller.Input((int) controllerIndex); } }
@@ -29,6 +30,7 @@ public class Moving_Sword :SteamVR_TrackedController
 	void Start()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject> ();
+		instantiateTimer = 1.0f;
 	}
 		
 
@@ -46,7 +48,10 @@ public class Moving_Sword :SteamVR_TrackedController
 		else 
 		{
 			gameObject.tag="Sword";
-			Instantiate (shadow);
+			if (instantiateTimer <= 0.0f) {
+				Instantiate (shadow);
+				instantiateTimer = 1.0f;
+			}
 		}
 
 
