@@ -10,6 +10,11 @@ public class BulletMovement : MonoBehaviour
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	public float speed;
+	public string currentTag;
+
+	public Rigidbody triggerSword;
+	public Vector3 triggerVelocity;
+
 	private Renderer rend;
 	private Color color= Color.white;
 	// Use this for initialization
@@ -24,7 +29,7 @@ public class BulletMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		currentTag = gameObject.tag;
 		//targetPosition = new Vector3 (_target.transform.position.x, _target.transform.position.y, _target.transform.position.z);
 		//targetPosition = _target.transform.position;
 		float step = speed * Time.deltaTime;
@@ -34,6 +39,9 @@ public class BulletMovement : MonoBehaviour
 
 	void OnTriggerEnter(Collider Other)
 	{
+		triggerSword = Other.attachedRigidbody;
+		triggerVelocity = triggerSword.velocity;
+
 		if (Other.gameObject.CompareTag ("Player")) {
 			Debug.Log ("Poke");
 			Destroy (gameObject);
@@ -45,16 +53,28 @@ public class BulletMovement : MonoBehaviour
 			rend.material.color = Color.black;
 			speed = -speed;
 			gameObject.tag = ("BulletBack");
+
+			this.gameObject.GetComponent<SpawnReturnBullet> ().ReturnBullet ();
 			//Debug.Log("ORA");
 			//float step = speed * Time.deltaTime;
 			//transform.position = Vector3.MoveTowards (transform.position, newTarget.position, step);
 
 		}
 
-		if (Other.gameObject.CompareTag ("BulletDetector") && this.gameObject.tag==("Bullet")) {
+		if (Other.gameObject.CompareTag ("BulletDetector") && this.gameObject.tag==(currentTag)) {
 			Debug.Log ("Beep!");
-			gameObject.tag = ("BulletDetected");
+			//gameObject.tag = (newTag);
 		}
+
+		/*if (Other.gameObject.CompareTag ("BulletDetector") && this.gameObject.tag==("BulletDetected")) {
+			Debug.Log ("Beep!");
+			gameObject.tag = ("BulletDetected2");
+		}
+
+		if (Other.gameObject.CompareTag ("BulletDetector") && this.gameObject.tag==("BulletDetected2")) {
+			Debug.Log ("Beep!");
+			gameObject.tag = ("BulletDetected3");
+		}*/
 
 		if (Other.gameObject.tag == "IdleSword") {
 			Destroy (this.gameObject);

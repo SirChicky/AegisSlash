@@ -16,6 +16,8 @@ TagManager:
   - Detection
   - LevelBorder
   - BackBullet
+  - BulletDetected2
+  - BulletDetected3
   layers:
   - Default
   - TransparentFX
