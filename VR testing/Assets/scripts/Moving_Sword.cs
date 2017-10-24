@@ -10,6 +10,7 @@ public class Moving_Sword :SteamVR_TrackedController
 	public float limitz;*/
 
 	public GameObject shadow;
+	//public GameObject parentSword;
 
 	public float limitangx;
 	public float limitangy;
@@ -30,7 +31,7 @@ public class Moving_Sword :SteamVR_TrackedController
 	void Start()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject> ();
-		instantiateTimer = 1.0f;
+		instantiateTimer = 0.01f;
 	}
 		
 
@@ -40,6 +41,11 @@ public class Moving_Sword :SteamVR_TrackedController
 		//Debug.Log ("" + controller.angularVelocity);
 		//Debug.Log (rb.velocity);
 		float dist = Vector3.Distance (previousPosition, transform.position);
+
+		//var shadowPosition = new Vector3(parentSword.position.x, parentSword.position.y, parentSword.position.z);
+		//var shadowRotation = Quaternion.identity;
+
+		instantiateTimer -= Time.deltaTime;
 		if (dist < movementThreshold)
 		{
 			gameObject.tag = "IdleSword";
@@ -49,8 +55,8 @@ public class Moving_Sword :SteamVR_TrackedController
 		{
 			gameObject.tag="Sword";
 			if (instantiateTimer <= 0.0f) {
-				Instantiate (shadow);
-				instantiateTimer = 1.0f;
+				Instantiate (shadow, transform.position, transform.rotation);
+				instantiateTimer = 0.01f;
 			}
 		}
 
