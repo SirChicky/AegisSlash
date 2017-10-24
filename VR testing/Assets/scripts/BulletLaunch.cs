@@ -18,13 +18,14 @@ public class BulletLaunch : MonoBehaviour
 	void Update () 
 	{ 
 		timer = timer - 1;
-
+		transform.LookAt (target);
 		if (timer<=0)
 		{
 			Vector3 start = transform.position;
 
 			{
 				GameObject obj = (GameObject)Instantiate (bullet, start, transform.rotation);
+				obj.GetComponent<BulletMovement>().newTarget = transform;
 				timer = originTimer;
 			}
 

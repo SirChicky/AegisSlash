@@ -211,6 +211,8 @@ MonoBehaviour:
   targetPosition: {x: 0, y: 0, z: 0}
   speed: 8
   currentTag: 
+  triggerSword: {fileID: 0}
+  triggerVelocity: {x: 0, y: 0, z: 0}
 --- !u!135 &135272749952052844
 SphereCollider:
   m_ObjectHideFlags: 1

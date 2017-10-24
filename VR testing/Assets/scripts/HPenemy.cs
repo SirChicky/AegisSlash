@@ -12,6 +12,7 @@ public class HPenemy : MonoBehaviour {
 			Destroy(this.gameObject);
 
 		}
+
 		if (Input.GetButtonDown ("Fire1")) {
 			Debug.Log ("Mort");
 			Destroy (this.gameObject);

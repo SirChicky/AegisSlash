@@ -10,6 +10,7 @@ public class Moving_Sword :SteamVR_TrackedController
 	public float limitz;*/
 
 	public GameObject shadow;
+	public Vector3 currentSpeed;
 	//public GameObject parentSword;
 
 	public float limitangx;
@@ -37,11 +38,12 @@ public class Moving_Sword :SteamVR_TrackedController
 
 	void Update()
 	{
+		Debug.DrawRay (transform.position, 3 * currentSpeed.normalized, Color.red, .1f);
 		//Debug.Log ("" + controller.velocity);
 		//Debug.Log ("" + controller.angularVelocity);
 		//Debug.Log (rb.velocity);
 		float dist = Vector3.Distance (previousPosition, transform.position);
-
+		currentSpeed =  transform.position - previousPosition; 
 		//var shadowPosition = new Vector3(parentSword.position.x, parentSword.position.y, parentSword.position.z);
 		//var shadowRotation = Quaternion.identity;
 
@@ -70,21 +72,12 @@ public class Moving_Sword :SteamVR_TrackedController
 	void OnTriggerEnter(Collider Other)
 	{
 		
-
-
-		
-
-		if (controller.velocity.x>limitangx)
-		{
-			//Debug.Log ("Star platinum");
-		}
-		if (controller.velocity.y>limitangy)
-		{
-			//Debug.Log ("Silver chariot");
-		}	
-		if (controller.velocity.z>limitangz)
-		{
-			//Debug.Log ("The world(O)");
+		if (Other.tag == "Bullet") {
+			/*Vector3 bulletDir = Other.attachedRigidbody.velocity;
+			Vector3 swordRot = new Vector3 (transform.rotation.x, transform.rotation.y, transform.rotation.z);
+			bulletDir -= swordRot;
+			Other.attachedRigidbody.velocity = bulletDir;*/
+			//Debug.Break ();
 		}
 
 	}
