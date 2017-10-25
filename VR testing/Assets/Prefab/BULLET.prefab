@@ -186,7 +186,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820607738457306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a22f46cd183be743b5f9c660407fe0c, type: 3}
   m_Name: 
@@ -209,10 +209,13 @@ MonoBehaviour:
   target: {fileID: 4510512385788106, guid: bc5cacd5330f9894386037b1347b8e27, type: 2}
   newTarget: {fileID: 4479149341423726, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
   targetPosition: {x: 0, y: 0, z: 0}
-  speed: 8
+  speed: 2
+  returnSpeedMultiplier: 3
   currentTag: 
-  triggerSword: {fileID: 0}
+  homingSpeed: 0.05
+  rb: {fileID: 0}
   triggerVelocity: {x: 0, y: 0, z: 0}
+  isDeflected: 0
 --- !u!135 &135272749952052844
 SphereCollider:
   m_ObjectHideFlags: 1

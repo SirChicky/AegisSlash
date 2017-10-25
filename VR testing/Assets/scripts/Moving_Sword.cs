@@ -25,14 +25,16 @@ public class Moving_Sword :SteamVR_TrackedController
 
 
 	Vector3 previousPosition;
+	/*[SerializeField]
+	float minMovementThreshold;
 	[SerializeField]
-	float movementThreshold;
+	float maxMovementThreshold;*/
 
 
 	void Start()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject> ();
-		instantiateTimer = 0.01f;
+		instantiateTimer = 0.005f;
 	}
 		
 
@@ -48,7 +50,7 @@ public class Moving_Sword :SteamVR_TrackedController
 		//var shadowRotation = Quaternion.identity;
 
 		instantiateTimer -= Time.deltaTime;
-		if (dist < movementThreshold)
+		/*if (dist < minMovementThreshold || dist > maxMovementThreshold)
 		{
 			gameObject.tag = "IdleSword";
 		}		
@@ -58,11 +60,15 @@ public class Moving_Sword :SteamVR_TrackedController
 			gameObject.tag="Sword";
 			if (instantiateTimer <= 0.0f) {
 				Instantiate (shadow, transform.position, transform.rotation);
-				instantiateTimer = 0.01f;
+				instantiateTimer = 0.005f;
+			}
+		}*/
+		if (gameObject.tag == "Sword") {
+			if (instantiateTimer <= 0.0f) {
+				Instantiate (shadow, transform.position, transform.rotation);
+				instantiateTimer = 0.005f;
 			}
 		}
-
-
 	}
 	void LateUpdate()
 	{

@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 33433044804849438}
   - component: {fileID: 135195629662552844}
   - component: {fileID: 23445718969342652}
-  - component: {fileID: 114501395160245692}
   - component: {fileID: 114865557563214166}
   m_Layer: 0
   m_Name: Bulletgenerator
@@ -193,21 +192,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114501395160245692
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864878850850804}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c34eb8fea95154449aab87f4f4964c98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  canon: {fileID: 0}
-  time: 0
-  power: 0
 --- !u!114 &114503643550774772
 MonoBehaviour:
   m_ObjectHideFlags: 1

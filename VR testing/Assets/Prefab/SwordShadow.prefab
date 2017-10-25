@@ -132,11 +132,13 @@ MonoBehaviour:
   padTouched: 0
   gripped: 0
   shadow: {fileID: 0}
+  currentSpeed: {x: 0, y: 0, z: 0}
   limitangx: 0.000001
   limitangy: 0.000001
   limitangz: 0.000001
   instantiateTimer: 0
-  movementThreshold: 0.01
+  minMovementThreshold: 0
+  maxMovementThreshold: 0
 --- !u!114 &114272694250869880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e461f6389a4601d4a9a3e80a35e1b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdown: 0.1
+  countdown: 0.05
 --- !u!114 &114433127080676642
 MonoBehaviour:
   m_ObjectHideFlags: 1
