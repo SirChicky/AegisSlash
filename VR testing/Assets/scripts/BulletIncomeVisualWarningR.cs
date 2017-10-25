@@ -33,7 +33,7 @@ public class BulletIncomeVisualWarningR : MonoBehaviour
 	IEnumerator Appear()
 	{
 		rightWarning.SetActive (true);
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (1f);
 		rightWarning.SetActive (false);
 		yield break;
 	}
