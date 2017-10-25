@@ -13,13 +13,12 @@ public class BulletIncomeVisualWarningL : MonoBehaviour
 	{
 		leftWarning.SetActive (false);
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
-		
-	}
 
+	}
 
 	void OnTriggerEnter (Collider other) 
 	{
@@ -38,6 +37,4 @@ public class BulletIncomeVisualWarningL : MonoBehaviour
 		leftWarning.SetActive (false);
 		yield break;
 	}
-
-
 }
