@@ -9,7 +9,6 @@ public class MultipleSpawn : MonoBehaviour {
 	public int numberenemies;
 	public Transform[] spawnPoints;
 	List<Transform> actualSpawns;
-	public bool existence;
 	public float timer;
 	private float timerOrigin;
 	private int numberenemiesOrigin;
@@ -25,7 +24,7 @@ public class MultipleSpawn : MonoBehaviour {
 
 	void Update () {
 		// If the player has no health left...
-		if(existence==true && enemy==true)
+		if(enemy==true)
 		{
 
 			timer= timer-(Time.deltaTime);
