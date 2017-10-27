@@ -5,19 +5,20 @@ using UnityEngine;
 public class SlashBack : MonoBehaviour {
 
 
-	void OnTriggerEnter (Collider Other){
-		if (Other.gameObject.tag == ("Sword")) {
-			this.gameObject.tag = ("Sword");
+	void OnTriggerEnter(Collider Other){
+		if (Other.gameObject.tag == ("Sword") || (Other.gameObject.tag == ("IdleSword"))) {
+			this.gameObject.tag = ("Sword2");
+		}
+	} 
 
-		
-		} 
-			if (Other.gameObject.tag == ("IdleSword"))
-			{
+	void OnTriggerStay(Collider Other){
+		if (Other.gameObject.tag == ("Sword")||(Other.gameObject.tag == ("IdleSword"))){
+			this.gameObject.tag = ("Sword2");
+			} 
+			
 
-				this.gameObject.tag=("idleSword");
-			}
-
-			else {
+			else{
+				
 			this.gameObject.tag = ("Untagged");
 		}
 		
