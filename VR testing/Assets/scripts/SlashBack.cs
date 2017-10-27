@@ -7,13 +7,13 @@ public class SlashBack : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Other){
 		if (Other.gameObject.tag == ("Sword") || (Other.gameObject.tag == ("IdleSword"))) {
-			this.gameObject.tag = ("Sword2");
+			this.gameObject.tag = ("Sword");
 		}
 	} 
 
 	void OnTriggerStay(Collider Other){
 		if (Other.gameObject.tag == ("Sword")||(Other.gameObject.tag == ("IdleSword"))){
-			this.gameObject.tag = ("Sword2");
+			this.gameObject.tag = ("Sword");
 			} 
 			
 
