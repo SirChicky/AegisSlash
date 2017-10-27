@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 135724735112148256}
   - component: {fileID: 23339816288146420}
   - component: {fileID: 54681601331374334}
-  - component: {fileID: 114495108282354382}
-  - component: {fileID: 114712222778350264}
   - component: {fileID: 82265388725734040}
   - component: {fileID: 114620119020344010}
   m_Layer: 8
@@ -181,19 +179,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114495108282354382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232216865450044}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a22f46cd183be743b5f9c660407fe0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  returnBullet: {fileID: 1504971582274672, guid: ee53c6fec5ab1dd4f885225064e697bf,
-    type: 2}
 --- !u!114 &114620119020344010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,32 +195,10 @@ MonoBehaviour:
   target: {fileID: 4510512385788106, guid: bc5cacd5330f9894386037b1347b8e27, type: 2}
   newTarget: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
-  speed: 10
+  speed: 3
   returnSpeedMultiplier: 2.5
   currentTag: 
   homingSpeed: 0.1
-  triggerVelocity: {x: 0, y: 0, z: 0}
-  isDeflected: 0
---- !u!114 &114712222778350264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232216865450044}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f793a73916251764ba264f8fb0feacf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 1597527072919470, guid: bc5cacd5330f9894386037b1347b8e27, type: 2}
-  _newTarget: {fileID: 1048956993376568, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
-  target: {fileID: 4510512385788106, guid: bc5cacd5330f9894386037b1347b8e27, type: 2}
-  newTarget: {fileID: 4479149341423726, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
-  targetPosition: {x: 0, y: 0, z: 0}
-  speed: 2
-  returnSpeedMultiplier: 3
-  currentTag: 
-  homingSpeed: 0.05
   rb: {fileID: 0}
   triggerVelocity: {x: 0, y: 0, z: 0}
   isDeflected: 0

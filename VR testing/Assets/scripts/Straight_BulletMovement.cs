@@ -16,7 +16,7 @@ public class Straight_BulletMovement : MonoBehaviour {
 	public string currentTag;
 	[Range(0.01f,.5f)]
 	public float homingSpeed;
-	//public Rigidbody rb;
+	public Rigidbody rb;
 	public Vector3 triggerVelocity;
 
 	private Renderer rend;
@@ -26,18 +26,28 @@ public class Straight_BulletMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//rb = GetComponent<Rigidbody> ();
+		rb = GetComponent<Rigidbody> ();
 		_target = GameObject.FindWithTag ("Player");
 		target = _target.transform;
-		targetPosition = _target.transform.position + new Vector3(gameObject.transform.position.x/2, 0, 0);
+		targetPosition = _target.transform.position /*+ new Vector3(gameObject.transform.position.x/2, 0, 0)*/;
 		rend = GetComponent<Renderer> ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-		float step = speed * Time.deltaTime;
-		transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
+	void FixedUpdate () {
+		if (!isDeflected) {
+			float step = speed * Time.deltaTime;
+			transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
+		}else{
+			if (newTarget != null) {
+				Vector3 directionTowardsEnemy = (newTarget.position - transform.position).normalized;
+				//Rotate bullet towards enemy progressively
+				transform.forward = Vector3.Lerp (transform.forward, directionTowardsEnemy, homingSpeed);
+			}
+			//Linear movement == The bullet will move forward
+			transform.position += transform.forward * (Time.deltaTime * speed * returnSpeedMultiplier);
+			//transform.position = Vector3.Lerp (transform.position, newTarget.position, Time.deltaTime * speed*2);
+		}
 
 	}
 

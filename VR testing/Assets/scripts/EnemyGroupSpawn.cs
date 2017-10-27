@@ -35,9 +35,9 @@ public class EnemyGroupSpawn : MonoBehaviour {
 		timer= timer-(Time.deltaTime);
 		if (timer <= 0) {
 			//for (int i = 0; i < enemies.Lenght; i++) 
-			foreach(GameObject enemies in enemies)
+			foreach(GameObject actualEnemies in enemies)
 			{
-				enemies.SetActive(true);
+				//enemies.SetActive(true);
 				timer = timerOrigin;
 			}
 		}

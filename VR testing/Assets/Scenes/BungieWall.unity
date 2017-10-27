@@ -6755,6 +6755,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1048956993376568, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c50a79062a3aaa4095ba36fc77c1245, type: 2}
   m_IsPrefabParent: 0
@@ -7457,7 +7461,7 @@ BoxCollider:
   m_GameObject: {fileID: 882487961}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7475,8 +7479,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882487961}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 31.180077, y: 0.16689819, z: 33.245277}
+  m_LocalPosition: {x: 1.3, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -14000,13 +14004,14 @@ GameObject:
   - component: {fileID: 1647796522}
   - component: {fileID: 1647796526}
   - component: {fileID: 1647796525}
+  - component: {fileID: 1647796527}
   m_Layer: 0
   m_Name: SpawnGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1647796521
 Transform:
   m_ObjectHideFlags: 0
@@ -14041,7 +14046,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1647796520}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
@@ -14091,7 +14096,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647796520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31339b7dbee0bf64fb86908918d93003, type: 3}
   m_Name: 
@@ -14111,10 +14116,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f5d99ab14a1074b8e3428a2c18c4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  spawnPoints: []
-  existence: 0
-  timer: 0
+  enemy: {fileID: 1201707464434134, guid: 8e1e7c443d764de4b8bf8075516982be, type: 2}
+  spawnPoints:
+  - {fileID: 304911055}
+  existence: 1
+  timer: 5
+--- !u!114 &1647796527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647796520}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66d93d22ffe59841894e1b080eacbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1653768013
 GameObject:
   m_ObjectHideFlags: 0
