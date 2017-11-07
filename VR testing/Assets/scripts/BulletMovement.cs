@@ -6,6 +6,9 @@ public class BulletMovement : MonoBehaviour
 {
 	public GameObject _target;
 	public GameObject _newTarget;
+	public GameObject hpmanager;
+	private HP hpPlayeraccess;
+	public int damage;
 	public Transform target;
 	public Transform newTarget;
 	public Vector3 targetPosition;
@@ -69,10 +72,22 @@ public class BulletMovement : MonoBehaviour
 
 		if (Other.gameObject.CompareTag ("Player")) {
 			Debug.Log ("Poke");
+			hpPlayeraccess = hpmanager.GetComponent<HP> ();
+			hpPlayeraccess.hpPlayer -= damage;
 			Destroy (gameObject);
 
 		}
-	if (Other.gameObject.CompareTag ("Sword") && !isDeflected) {
+	if (Other.CompareTag ("BackSlash") && !isDeflected) {
+			Debug.Log ("Whack");
+			rend.material.color = Color.black;
+			//speed = -speed;
+			gameObject.tag = ("BulletBack");
+			isDeflected = true;
+			//Give the sword direction to the bullet
+			transform.forward = -transform.forward;
+
+		}
+	else if (Other.CompareTag ("Sword") && !isDeflected) {
 			Debug.Log ("Whack");
 			rend.material.color = Color.black;
 			//speed = -speed;
@@ -104,6 +119,10 @@ public class BulletMovement : MonoBehaviour
 		}*/
 
 		if (Other.gameObject.tag == "IdleSword") {
+			Destroy (this.gameObject);
+			//Debug.Log ("KIKOO");
+		}
+		if (Other.gameObject.tag == "Super") {
 			Destroy (this.gameObject);
 			//Debug.Log ("KIKOO");
 		}

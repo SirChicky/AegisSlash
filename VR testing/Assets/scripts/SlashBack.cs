@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlashBack : MonoBehaviour {
-
+	public GameObject recever;
 
 	void OnTriggerEnter(Collider Other){
-		if (Other.gameObject.tag == ("Sword") || (Other.gameObject.tag == ("IdleSword"))) {
-			this.gameObject.tag = ("Sword");
+		if (Other.gameObject.CompareTag ("Sword") || (Other.gameObject.CompareTag ("IdleSword"))) {
+			recever.tag = "BackSlash";
 		}
 	} 
 
 	void OnTriggerStay(Collider Other){
-		if (Other.gameObject.tag == ("Sword")||(Other.gameObject.tag == ("IdleSword"))){
-			this.gameObject.tag = ("Sword");
+		if (Other.gameObject.CompareTag ("Sword")||(Other.gameObject.CompareTag ("IdleSword"))){
+			recever.tag = "BackSlash";
 			} 
 			
 
 			else{
 				
-			this.gameObject.tag = ("Untagged");
+			recever.tag = "Untagged";
 		}
 		
 	}

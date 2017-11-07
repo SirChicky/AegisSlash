@@ -7,6 +7,9 @@ public class Straight_BulletMovement : MonoBehaviour {
 	public GameObject _target;
 	public GameObject _newTarget;
 	public Transform target;
+	public GameObject hpmanager;
+	private HP hpPlayeraccess;
+	public int damage;
 	public Transform newTarget;
 	public Vector3 targetPosition;
 	[Tooltip("Regular speed of the bullet")]
@@ -31,6 +34,7 @@ public class Straight_BulletMovement : MonoBehaviour {
 		target = _target.transform;
 		targetPosition = _target.transform.position /*+ new Vector3(gameObject.transform.position.x/2, 0, 0)*/;
 		rend = GetComponent<Renderer> ();
+
 	}
 	
 	// Update is called once per frame
@@ -56,6 +60,8 @@ public class Straight_BulletMovement : MonoBehaviour {
 
 		if (Other.gameObject.CompareTag ("Player")) {
 			Debug.Log ("Poke");
+			hpPlayeraccess = hpmanager.GetComponent<HP> ();
+			hpPlayeraccess.hpPlayer -= damage;
 			Destroy (gameObject);
 
 		}

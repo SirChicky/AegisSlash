@@ -18,6 +18,9 @@ TagManager:
   - BackBullet
   - BulletDetected2
   - BulletDetected3
+  - BackSlash
+  - Soil
+  - Super
   layers:
   - Default
   - TransparentFX
