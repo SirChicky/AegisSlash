@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerHapticPulse : MonoBehaviour {
-
+public class TriggerHapticPulse : MonoBehaviour  {
+	
 	//SteamVR_TrackedObject trackedObj;
 
 	void Awake ()
@@ -27,7 +27,7 @@ public class TriggerHapticPulse : MonoBehaviour {
 		if (Other.gameObject.CompareTag ("Bullet")) {
 			Debug.Log ("Wack!");
 			var trackedObj = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
-			SteamVR_Controller.Input (trackedObj).TriggerHapticPulse (1000);
+			SteamVR_Controller.Input (trackedObj).TriggerHapticPulse (3999);
 		}
 	}
 }
