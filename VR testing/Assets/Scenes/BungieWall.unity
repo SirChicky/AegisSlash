@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18253183, g: 0.22824296, b: 0.3072177, a: 1}
+  m_IndirectSpecularColor: {r: 0.1825315, g: 0.22824217, b: 0.30721655, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -227,6 +227,57 @@ Transform:
   m_Father: {fileID: 314085976}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 90}
+--- !u!1001 &91023712
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399017122042950, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_TagString
+      value: Soil
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399017122042950, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+      propertyPath: m_Name
+      value: Floor
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114266621514154534, guid: b8691046ce0fdac4699e615b2710bfee, type: 2}
+  m_ParentPrefab: {fileID: 0}
+  m_IsPrefabParent: 0
 --- !u!1 &112165247
 GameObject:
   m_ObjectHideFlags: 0
@@ -15340,8 +15391,9 @@ Transform:
 --- !u!1 &1952770418
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 1399017122042950, guid: b8691046ce0fdac4699e615b2710bfee,
+    type: 2}
+  m_PrefabInternal: {fileID: 91023712}
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1952770422}
@@ -15349,7 +15401,7 @@ GameObject:
   - component: {fileID: 1952770420}
   - component: {fileID: 1952770419}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Floor
   m_TagString: Soil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15358,8 +15410,9 @@ GameObject:
 --- !u!23 &1952770419
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 23096863677589006, guid: b8691046ce0fdac4699e615b2710bfee,
+    type: 2}
+  m_PrefabInternal: {fileID: 91023712}
   m_GameObject: {fileID: 1952770418}
   m_Enabled: 1
   m_CastShadows: 1
@@ -15390,8 +15443,9 @@ MeshRenderer:
 --- !u!65 &1952770420
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 65077282894595504, guid: b8691046ce0fdac4699e615b2710bfee,
+    type: 2}
+  m_PrefabInternal: {fileID: 91023712}
   m_GameObject: {fileID: 1952770418}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15402,15 +15456,17 @@ BoxCollider:
 --- !u!33 &1952770421
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 33628839681088764, guid: b8691046ce0fdac4699e615b2710bfee,
+    type: 2}
+  m_PrefabInternal: {fileID: 91023712}
   m_GameObject: {fileID: 1952770418}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1952770422
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 4747120543124794, guid: b8691046ce0fdac4699e615b2710bfee,
+    type: 2}
+  m_PrefabInternal: {fileID: 91023712}
   m_GameObject: {fileID: 1952770418}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
