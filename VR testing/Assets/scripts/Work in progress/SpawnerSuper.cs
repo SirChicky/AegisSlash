@@ -29,8 +29,7 @@ public class SpawnerSuper : MonoBehaviour {
 				timer = originTimer;
 				activation = false;
 
-
-		}
+				}
 	}
 }
 }
