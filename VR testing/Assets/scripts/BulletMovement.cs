@@ -72,8 +72,8 @@ public class BulletMovement : MonoBehaviour
 
 		if (Other.gameObject.CompareTag ("Player")) {
 			Debug.Log ("Poke");
-			hpPlayeraccess = hpmanager.GetComponent<HP> ();
-			hpPlayeraccess.hpPlayer -= damage;
+			//hpPlayeraccess = hpmanager.GetComponent<HP> ();
+			//hpPlayeraccess.hpPlayer -= damage;
 			Destroy (gameObject);
 
 		}

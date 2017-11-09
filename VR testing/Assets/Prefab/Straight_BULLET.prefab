@@ -197,7 +197,7 @@ MonoBehaviour:
   damage: 3
   newTarget: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
-  speed: 3
+  speed: 4
   returnSpeedMultiplier: 2.5
   currentTag: 
   homingSpeed: 0.1

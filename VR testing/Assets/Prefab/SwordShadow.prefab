@@ -137,8 +137,6 @@ MonoBehaviour:
   limitangy: 0.000001
   limitangz: 0.000001
   instantiateTimer: 0
-  minMovementThreshold: 0
-  maxMovementThreshold: 0
 --- !u!114 &114272694250869880
 MonoBehaviour:
   m_ObjectHideFlags: 1
