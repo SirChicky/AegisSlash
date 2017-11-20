@@ -8,6 +8,7 @@ public class Universal_Spawner : MonoBehaviour {
 		public List<GameObject> enemies = new List<GameObject> ();
 		public List<Transform> spawnposition = new List<Transform> ();
 		public List<bool> grouped = new List<bool> ();
+	    public List<bool> inGroup = new List<bool> ();
 		private int spawnsOrigin;
 		private int spawnsNumber;
 		private int spawnsNumber2;
@@ -23,18 +24,35 @@ public class Universal_Spawner : MonoBehaviour {
 				spawnsStart -= 1;
 				spawnsNumber = spawnsStart;
 			}
+		if (spawnsStart == 0) {
+			spawnsNumber = 1;
+		}
 		}
 
 		void Update () {
 			//FailSafe ();
 			spawnsNumber2.Equals (GameObject.FindGameObjectWithTag ("Enemy"));
-			if ((spawnsNumber != spawnsNumber2)||grouped[0]==true) {
+		if (inGroup[0] = true) {
+			spawnsNumber = 0;
+			if ((spawnsNumber2 ==spawnsNumber) || grouped [0] == true) {
 				if (spawnsStart <= 0 && spawnsNumber <= 0) {
-					timer [0] -=Time.deltaTime;
+					timer [0] -= Time.deltaTime;
 					if (timer [0] <= 0.0f) {
 						Spawn ();
 						spawnsNumber = spawnsNumber2;
 					}
+				}
+			}
+		}
+		if (inGroup[0]=false){
+			if ((spawnsNumber != spawnsNumber2)||grouped[0]==true) {
+				if (spawnsStart <= 0 && spawnsNumber <= 0) {
+					timer [0] -= Time.deltaTime;
+					if (timer [0] <= 0.0f) {
+						Spawn ();
+						spawnsNumber = spawnsNumber2;
+					}
+				  }
 				}
 			}
 		}
@@ -45,6 +63,8 @@ public class Universal_Spawner : MonoBehaviour {
 			spawnposition.Remove(spawnposition[0]);
 			timer.Remove (timer [0]);
 			grouped.Remove(grouped[0]);
+		    inGroup.Remove (inGroup [0]);
+		    
 		}
 		//void FailSafe(){
 		//if (enemies [0].Equals( enemies.FindLastIndex(enemies))){
