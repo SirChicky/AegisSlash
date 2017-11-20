@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HP : MonoBehaviour {
-	public int hpPlayer;
-	private int hpPlayerOrigin;
+	public float hpPlayer;
+	private float hpPlayerOrigin;
 
 	private BulletMovement bulletMovementaccess;
 	private Straight_BulletMovement straightBulletMovementaccess;

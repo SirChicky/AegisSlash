@@ -193,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 22397992}
   m_LocalRotation: {x: 0.70514375, y: 0.70903206, z: 0.0047582956, w: 0.0048241387}
-  m_LocalPosition: {x: 22.59, y: 2, z: 7.12}
+  m_LocalPosition: {x: 22.59, y: 2, z: 8.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314085976}
@@ -568,7 +568,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149711406}
   m_LocalRotation: {x: 0.7071028, y: 0.7071028, z: -0.0023912038, w: -0.0023911984}
-  m_LocalPosition: {x: 21.050001, y: 2, z: 12.38}
+  m_LocalPosition: {x: 18.58, y: 2, z: 16.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314085976}
@@ -661,27 +661,27 @@ Prefab:
         type: 2}
       propertyPath: spawnPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 149711407}
+      objectReference: {fileID: 1552527406}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 22397993}
+      objectReference: {fileID: 149711407}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1406345665}
+      objectReference: {fileID: 22397993}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1552527406}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 149711407}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[5]
@@ -744,7 +744,7 @@ Prefab:
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: timer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1760174435557558, guid: d74a5f65e33c8bf4f83e93edefe27dc1, type: 2}
       propertyPath: m_IsActive
@@ -905,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &218660859
 Transform:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218660858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -5148,7 +5148,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 371087197}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.12, y: 2.38, z: 22.7}
+  m_LocalPosition: {x: -0.12, y: 2.38, z: 25.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314085976}
@@ -6834,7 +6834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &659213339
 Transform:
   m_ObjectHideFlags: 0
@@ -6862,7 +6862,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 659213338}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -7537,7 +7537,7 @@ MonoBehaviour:
   limitangy: 0
   limitangz: 0
   childSword: {fileID: 1090325597}
-  minMovementThreshold: 0.05
+  minMovementThreshold: 0.025
   maxMovementThreshold: 10
 --- !u!4 &756729458 stripped
 Transform:
@@ -8056,27 +8056,27 @@ Prefab:
         type: 2}
       propertyPath: spawnPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 659213339}
+      objectReference: {fileID: 1133170570}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1133170570}
+      objectReference: {fileID: 1376982335}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1376982335}
+      objectReference: {fileID: 969258291}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1552527406}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 149711407}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[5]
@@ -8135,7 +8135,7 @@ Prefab:
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: timer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1760174435557558, guid: d74a5f65e33c8bf4f83e93edefe27dc1, type: 2}
       propertyPath: m_IsActive
@@ -8530,6 +8530,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114779315872244760, guid: cc79d3cdc0481d647b2598faa8d34e3a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc79d3cdc0481d647b2598faa8d34e3a, type: 2}
   m_IsPrefabParent: 0
@@ -8572,7 +8577,7 @@ Prefab:
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4832933822438682, guid: d74a5f65e33c8bf4f83e93edefe27dc1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -8625,12 +8630,12 @@ Prefab:
         type: 2}
       propertyPath: spawnPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1376982335}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 149711407}
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: spawnPoints.Array.data[5]
@@ -8693,7 +8698,7 @@ Prefab:
     - target: {fileID: 114433501913849078, guid: d74a5f65e33c8bf4f83e93edefe27dc1,
         type: 2}
       propertyPath: timer
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1760174435557558, guid: d74a5f65e33c8bf4f83e93edefe27dc1, type: 2}
       propertyPath: m_IsActive
@@ -8760,7 +8765,7 @@ MonoBehaviour:
   limitangy: 0
   limitangz: 0
   childSword: {fileID: 1612672431}
-  minMovementThreshold: 0.05
+  minMovementThreshold: 0.025
   maxMovementThreshold: 10
 --- !u!1 &1090325597
 GameObject:
@@ -9178,7 +9183,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1133170569}
   m_LocalRotation: {x: -0.0015307, y: -0.001530704, z: 0.70710516, w: 0.70710516}
-  m_LocalPosition: {x: -23.330002, y: 2.0299997, z: 7.1799994}
+  m_LocalPosition: {x: -23.330002, y: 2.0299997, z: 9.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314085976}
@@ -13584,7 +13589,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1376982334}
   m_LocalRotation: {x: -0.01035124, y: -0.010351241, z: 0.707031, w: 0.707031}
-  m_LocalPosition: {x: -21.86, y: 2.0299997, z: 12.51}
+  m_LocalPosition: {x: -19.03, y: 2.0299997, z: 16.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314085976}
@@ -13646,7 +13651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1406345665
 Transform:
   m_ObjectHideFlags: 0
@@ -13674,7 +13679,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406345664}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -14240,7 +14245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1591338011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14724,7 +14729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1647796521
 Transform:
   m_ObjectHideFlags: 0

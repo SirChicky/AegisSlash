@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HPenemy : MonoBehaviour {
-	public int hp;
-	public int damages;
+	public float hp;
+	public float damages;
 	// Update is called once per frame
 	void Update () {
 		//Debug.Log(""+ hp);
